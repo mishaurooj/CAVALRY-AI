@@ -1,0 +1,36 @@
+selected_feature
+Dst Port
+Flow Duration
+TotLen Fwd Pkts
+TotLen Bwd Pkts
+Fwd Pkt Len Max
+Fwd Pkt Len Mean
+Fwd Pkt Len Std
+Bwd Pkt Len Max
+Bwd Pkt Len Mean
+Bwd Pkt Len Std
+Flow Pkts/s
+Flow IAT Mean
+Flow IAT Max
+Fwd IAT Tot
+Fwd IAT Mean
+Fwd IAT Max
+Fwd IAT Min
+Fwd Header Len
+Fwd Pkts/s
+Bwd Pkts/s
+Pkt Len Max
+Pkt Len Mean
+Pkt Len Std
+Pkt Len Var
+Pkt Size Avg
+Fwd Seg Size Avg
+Bwd Seg Size Avg
+Subflow Fwd Byts
+Subflow Bwd Byts
+Init Fwd Win Byts
+Init Bwd Win Byts
+CMG_dst_port_frequency
+RWAR_flow_intensity
+RWAR_byte_asymmetry
+RWAR_risk_score
