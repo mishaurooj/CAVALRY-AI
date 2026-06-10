@@ -186,7 +186,17 @@ Classes:
 * Benign
 
 ---
+## CAVALRY-AI Architecture
 
+<p align="center">
+  <img src="CAVALRY_AI_Architecture.png" alt="CAVALRY-AI Architecture" width="100%">
+</p>
+
+<p align="center">
+<b>Figure 1.</b> Overview of the proposed CAVALRY-AI framework.
+</p>
+
+---
 # Dataset
 
 ## CSE-CIC-IDS2018
