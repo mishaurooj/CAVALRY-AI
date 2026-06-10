@@ -1,0 +1,10 @@
+,Benign,Bot,BruteForce-Web,DDoS-HOIC,DDoS-LOIC-HTTP,DDoS-LOIC-UDP,DoS-GoldenEye,DoS-SlowHTTPTest,FTP-BruteForce
+Benign,20491,0,351,24,0,0,9,0,0
+Bot,2,4514,0,0,0,0,0,0,0
+BruteForce-Web,41,0,106,6,0,0,0,0,0
+DDoS-HOIC,1,0,1,3961,0,0,0,0,0
+DDoS-LOIC-HTTP,0,0,0,0,4983,0,0,0,0
+DDoS-LOIC-UDP,0,0,0,0,0,433,0,0,0
+DoS-GoldenEye,0,0,0,0,0,0,4980,0,0
+DoS-SlowHTTPTest,0,0,0,0,0,0,0,787,263
+FTP-BruteForce,0,0,0,0,0,0,0,116,914
