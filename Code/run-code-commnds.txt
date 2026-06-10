@@ -1,0 +1,19 @@
+conda activate cavalry-ai
+cd /d D:\other\CAVALRY-AI\Code
+python cavalry_dataset_audit.py --data_dir "D:\other\CAVALRY-AI\CSE-CIC-IDS2018" --sample_rows 200000
+
+
+python cavalry_ai_experiments.py ^
+  --data_dir "D:\other\CAVALRY-AI\CSE-CIC-IDS2018" ^
+  --max_rows_per_file 120000 ^
+  --max_total_rows 800000 ^
+  --mode both
+
+
+For a stronger paper result, increase later:
+
+python cavalry_ai_experiments.py ^
+  --data_dir "D:\other\CAVALRY-AI\CSE-CIC-IDS2018" ^
+  --max_rows_per_file 300000 ^
+  --max_total_rows 1500000 ^
+  --mode both

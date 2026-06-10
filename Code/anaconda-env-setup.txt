@@ -1,0 +1,4 @@
+conda create -n cavalry-ai python=3.10 -y
+conda activate cavalry-ai
+pip install pandas numpy scikit-learn matplotlib seaborn tqdm joblib pyarrow
+pip install networkx faiss-cpu langchain langgraph chromadb fastapi uvicorn
