@@ -1,0 +1,184 @@
+CAVALRY-AI DATASET AUDIT REPORT
+========================================
+
+Files scanned: 10
+Total estimated rows: 16,233,002
+Total sample rows loaded: 2,000,000
+
+PER-FILE SUMMARY
+----------------------------------------
+
+File: 02-14-2018.csv
+  Size MB: 341.63
+  Estimated rows: 1048575
+  Sample rows loaded: 200000
+  Columns: 80
+  Label column: Label
+  Missing values in sample: 5
+  Duplicate rows in sample: 145191
+  Infinite numeric values in sample: 5
+  Read error: None
+  Label distribution in sample:
+    FTP-BruteForce: 179244
+    SSH-Bruteforce: 20490
+    Benign: 266
+
+File: 02-15-2018.csv
+  Size MB: 358.53
+  Estimated rows: 1048575
+  Sample rows loaded: 200000
+  Columns: 80
+  Label column: Label
+  Missing values in sample: 701
+  Duplicate rows in sample: 854
+  Infinite numeric values in sample: 1683
+  Read error: None
+  Label distribution in sample:
+    Benign: 147502
+    DoS attacks-GoldenEye: 41508
+    DoS attacks-Slowloris: 10990
+
+File: 02-16-2018.csv
+  Size MB: 318.26
+  Estimated rows: 1048575
+  Sample rows loaded: 200000
+  Columns: 80
+  Label column: Label
+  Missing values in sample: 0
+  Duplicate rows in sample: 80502
+  Infinite numeric values in sample: 0
+  Read error: None
+  Label distribution in sample:
+    DoS attacks-SlowHTTPTest: 91434
+    DoS attacks-Hulk: 67350
+    Benign: 41216
+
+File: 02-20-2018.csv
+  Size MB: 3867.08
+  Estimated rows: 7948748
+  Sample rows loaded: 200000
+  Columns: 84
+  Label column: Label
+  Missing values in sample: 0
+  Duplicate rows in sample: 0
+  Infinite numeric values in sample: 0
+  Read error: None
+  Label distribution in sample:
+    DDoS attacks-LOIC-HTTP: 199894
+    Benign: 106
+
+File: 02-21-2018.csv
+  Size MB: 313.66
+  Estimated rows: 1048575
+  Sample rows loaded: 200000
+  Columns: 80
+  Label column: Label
+  Missing values in sample: 0
+  Duplicate rows in sample: 1958
+  Infinite numeric values in sample: 0
+  Read error: None
+  Label distribution in sample:
+    DDOS attack-HOIC: 196055
+    Benign: 2215
+    DDOS attack-LOIC-UDP: 1730
+
+File: 02-22-2018.csv
+  Size MB: 364.91
+  Estimated rows: 1048575
+  Sample rows loaded: 200000
+  Columns: 80
+  Label column: Label
+  Missing values in sample: 766
+  Duplicate rows in sample: 339
+  Infinite numeric values in sample: 1558
+  Read error: None
+  Label distribution in sample:
+    Benign: 199638
+    Brute Force -Web: 249
+    Brute Force -XSS: 79
+    SQL Injection: 34
+
+File: 02-23-2018.csv
+  Size MB: 365.11
+  Estimated rows: 1048575
+  Sample rows loaded: 200000
+  Columns: 80
+  Label column: Label
+  Missing values in sample: 778
+  Duplicate rows in sample: 169
+  Infinite numeric values in sample: 1530
+  Read error: None
+  Label distribution in sample:
+    Benign: 199434
+    Brute Force -Web: 362
+    Brute Force -XSS: 151
+    SQL Injection: 53
+
+File: 02-28-2018.csv
+  Size MB: 199.56
+  Estimated rows: 613104
+  Sample rows loaded: 200000
+  Columns: 80
+  Label column: Label
+  Missing values in sample: 1280
+  Duplicate rows in sample: 70
+  Infinite numeric values in sample: 0
+  Read error: None
+  Label distribution in sample:
+    Benign: 199992
+    Label: 8
+
+File: 03-01-2018.csv
+  Size MB: 102.85
+  Estimated rows: 331125
+  Sample rows loaded: 200000
+  Columns: 80
+  Label column: Label
+  Missing values in sample: 1161
+  Duplicate rows in sample: 64
+  Infinite numeric values in sample: 0
+  Read error: None
+  Label distribution in sample:
+    Benign: 145677
+    Infilteration: 54311
+    Label: 12
+
+File: 03-02-2018.csv
+  Size MB: 336.04
+  Estimated rows: 1048575
+  Sample rows loaded: 200000
+  Columns: 80
+  Label column: Label
+  Missing values in sample: 106
+  Duplicate rows in sample: 1368
+  Infinite numeric values in sample: 246
+  Read error: None
+  Label distribution in sample:
+    Bot: 162906
+    Benign: 37094
+
+COMBINED LABEL DISTRIBUTION FROM SAMPLES
+----------------------------------------
+Benign: 973140
+DDoS attacks-LOIC-HTTP: 199894
+DDOS attack-HOIC: 196055
+FTP-BruteForce: 179244
+Bot: 162906
+DoS attacks-SlowHTTPTest: 91434
+DoS attacks-Hulk: 67350
+Infilteration: 54311
+DoS attacks-GoldenEye: 41508
+SSH-Bruteforce: 20490
+DoS attacks-Slowloris: 10990
+DDOS attack-LOIC-UDP: 1730
+Brute Force -Web: 611
+Brute Force -XSS: 230
+SQL Injection: 87
+Label: 20
+
+RECOMMENDED NEXT STEPS
+----------------------------------------
+1. Send dataset_audit_report.txt and per_file_summary.csv output.
+2. Confirm the detected label column.
+3. Use sampled training first before full-file training because these CSV files are large.
+4. Remove duplicate rows, clean NaN/Inf values, encode labels, and train baseline IDS models.
