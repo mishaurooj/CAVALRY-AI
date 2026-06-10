@@ -1,0 +1,58 @@
+CAVALRY-AI Experimental Design
+===============================
+
+Main evaluation perspectives:
+1. Detection perspective:
+   - Binary classification: Benign vs Attack
+   - Multiclass classification: attack-family classification
+
+2. Model perspective:
+   - GaussianNB
+   - LogisticRegression
+   - RandomForest
+   - ExtraTrees
+   - HistGradientBoosting
+
+3. Ablation perspective:
+   - A0_CoreFlow: basic flow statistics only
+   - A1_Core_PortProtocol: core flow + destination/source port/protocol
+   - A2_Core_PortProtocol_Temporal: adds inter-arrival and idle/active timing
+   - A3_AllNumeric_NoCMG_NoRWAR: all available numeric flow features, no proposed modules
+   - A4_RWAR_RiskRouting: adds risk-routing engineered features
+   - A5_CMG_GraphMemory: adds graph-memory frequency/degree features where IP fields exist
+   - A6_Full_CAVALRY_AI: all features including RWAR and CMG
+   - A6b_Full_CAVALRY_AI_SelectKBest: full model with mutual-information feature selection
+   - A7_TCPFlagsOnly: TCP flag-only diagnostic baseline
+
+4. Metrics:
+   - Accuracy
+   - Balanced accuracy
+   - Macro precision
+   - Macro recall
+   - Macro F1-score
+   - Weighted precision
+   - Weighted recall
+   - Weighted F1-score
+   - Matthews correlation coefficient
+   - ROC-AUC macro OvR where available
+   - PR-AUC macro where available
+   - Log loss where available
+   - Training time
+   - Inference time
+   - Inference milliseconds per sample
+
+Recommended reporting tables:
+1. Table I: Dataset distribution after cleaning
+2. Table II: Binary classification model comparison
+3. Table III: Multiclass classification model comparison
+4. Table IV: Ablation study across A0-A7
+5. Table V: Runtime and inference latency comparison
+6. Table VI: Per-class precision, recall, F1-score
+
+Recommended figures:
+1. Label distribution
+2. Ablation macro F1 bar chart
+3. Model macro F1 bar chart
+4. Confusion matrix for best binary model
+5. Confusion matrix for best multiclass model
+6. Latency vs macro F1 scatter plot
