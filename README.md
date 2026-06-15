@@ -422,7 +422,7 @@ If you use CAVALRY-AI in your research, please cite:
 ```bibtex
 @article{cavalryai2026,
   title={CAVALRY-AI: Cybersecurity Agentic Vision-Action Large Language Model with Risk-aware hYbrid Intelligence},
-  author={Urooj, Misha},
+  author={Farooq, Misha, Ahmad},
   journal={Under Review},
   year={2026}
 }
